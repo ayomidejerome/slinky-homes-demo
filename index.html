@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Emarv Homes & Properties | Find Your Next Home</title>
+    <title>Slinky Homes & Properties | Port Harcourt</title>
+
+    <meta
+        name="description"
+        content="Slinky Homes & Properties — discover property opportunities, homes and real estate services in Port Harcourt."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,34 +24,32 @@
 
         <div class="container nav-container">
 
-            <a href="#" class="logo">
-                <span class="logo-main">EMARV</span>
-                <span class="logo-sub">HOMES & PROPERTIES</span>
+            <a href="index.html" class="logo">
+                SLINKY
+                <span>HOMES & PROPERTIES</span>
             </a>
 
             <nav class="nav-links">
-    <a href="#properties">Properties</a>
-    <a href="#services">Services</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-</nav>
 
-<button class="mobile-menu-button" aria-label="Open navigation menu">
-    ☰
-</button>
+                <a href="#home">Home</a>
+                <a href="#properties">Properties</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
 
-<a href="#contact" class="nav-button">
-    Let's Talk
-</a>
+            </nav>
+
+            <button
+                class="mobile-menu-button"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
 
         </div>
 
     </header>
 
-
-    <!-- =========================
-         MAIN CONTENT
-    ========================== -->
 
     <main>
 
@@ -54,79 +57,29 @@
              HERO
         ========================== -->
 
-        <section class="hero">
+        <section class="hero" id="home">
 
             <div class="hero-overlay"></div>
 
             <div class="container hero-content">
 
-                <div class="hero-text">
+                <p class="eyebrow">
+                    REAL ESTATE • PORT HARCOURT
+                </p>
 
-                    <p class="hero-tag">
-                        YOUR PROPERTY. YOUR FUTURE.
-                    </p>
+                <h1>
+    Spaces That
+    <span>Feel Like Home.</span>
+</h1>
 
-                    <h1>
-                        Find a Place<br>
-                        You'll Love to Call Home.
-                    </h1>
+                <p class="hero-text">
+                    Discover quality homes, land and property
+                    opportunities with a trusted real estate partner.
+                </p>
 
-                    <p class="hero-description">
-                        Discover exceptional homes, land and real estate
-                        opportunities across Port Harcourt and beyond.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#properties" class="primary-button">
-                            Explore Properties
-                        </a>
-
-                        <a href="#contact" class="secondary-button">
-                            Speak With Us
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- TRUST POINTS -->
-
-                <div class="hero-trust">
-
-                    <div class="trust-item">
-                        <strong>01</strong>
-
-                        <span>
-                            Property<br>
-                            Solutions
-                        </span>
-                    </div>
-
-                    <div class="trust-divider"></div>
-
-                    <div class="trust-item">
-                        <strong>02</strong>
-
-                        <span>
-                            Local Market<br>
-                            Knowledge
-                        </span>
-                    </div>
-
-                    <div class="trust-divider"></div>
-
-                    <div class="trust-item">
-                        <strong>03</strong>
-
-                        <span>
-                            Client-Focused<br>
-                            Service
-                        </span>
-                    </div>
-
-                </div>
+                <a href="#properties" class="primary-button">
+                    Explore Properties
+                </a>
 
             </div>
 
@@ -134,7 +87,7 @@
 
 
         <!-- =========================
-             PROPERTY SEARCH
+             SEARCH
         ========================== -->
 
         <section class="search-section">
@@ -150,10 +103,27 @@
                         </label>
 
                         <select id="location">
-                            <option>Port Harcourt</option>
-                            <option>Rumuola</option>
-                            <option>New GRA</option>
-                            <option>Old GRA</option>
+
+                            <option value="Port Harcourt">
+                                Port Harcourt
+                            </option>
+
+                            <option value="Rumuola">
+                                Rumuola
+                            </option>
+
+                            <option value="GRA">
+                                GRA
+                            </option>
+
+                            <option value="Peter Odili">
+                                Peter Odili
+                            </option>
+
+                            <option value="Trans Amadi">
+                                Trans Amadi
+                            </option>
+
                         </select>
 
                     </div>
@@ -166,11 +136,23 @@
                         </label>
 
                         <select id="property-type">
-                            <option>Any Property</option>
-                            <option>House</option>
-                            <option>Apartment</option>
-                            <option>Land</option>
-                            <option>Commercial</option>
+
+                            <option value="Any Property">
+                                Any Property
+                            </option>
+
+                            <option value="House">
+                                House
+                            </option>
+
+                            <option value="Apartment">
+                                Apartment
+                            </option>
+
+                            <option value="Land">
+                                Land
+                            </option>
+
                         </select>
 
                     </div>
@@ -183,15 +165,28 @@
                         </label>
 
                         <select id="purpose">
-                            <option>Buy</option>
-                            <option>Rent</option>
-                            <option>Invest</option>
+
+                            <option value="Buy">
+                                Buy
+                            </option>
+
+                            <option value="Rent">
+                                Rent
+                            </option>
+
+                            <option value="Invest">
+                                Invest
+                            </option>
+
                         </select>
 
                     </div>
 
 
-                    <button class="search-button">
+                    <button
+                        class="search-button"
+                        type="button"
+                    >
                         Search
                     </button>
 
@@ -206,27 +201,27 @@
              FEATURED PROPERTIES
         ========================== -->
 
-        <section class="properties-section" id="properties">
+        <section
+            class="properties-section"
+            id="properties"
+        >
 
             <div class="container">
 
                 <div class="section-heading">
 
-                    <div>
+                    <p class="eyebrow">
+                        FEATURED PROPERTIES
+                    </p>
 
-                        <p class="section-tag">
-                            FEATURED
-                        </p>
+                    <h2>
+                        Explore Our Properties
+                    </h2>
 
-                        <h2>
-                            Explore Properties
-                        </h2>
-
-                    </div>
-
-                    <a href="#" class="view-all">
-                        View All Properties →
-                    </a>
+                    <p>
+                        Discover carefully selected property
+                        opportunities in desirable locations.
+                    </p>
 
                 </div>
 
@@ -240,18 +235,18 @@
 
                         <div class="property-image">
 
-                            <span class="property-status">
+                            <img
+                                src="images/property-1.jpg"
+                                alt="Modern residential property"
+                            >
+
+                            <span class="property-tag">
                                 FOR SALE
                             </span>
 
-                            <div class="demo-label">
-                                Demo Property
-                            </div>
-
                         </div>
 
-
-                        <div class="property-info">
+                        <div class="property-content">
 
                             <p class="property-location">
                                 Port Harcourt, Rivers State
@@ -261,8 +256,12 @@
                                 Modern Family Residence
                             </h3>
 
+                            <p class="property-description">
+                                A spacious contemporary residence
+                                designed for comfortable family living.
+                            </p>
 
-                            <div class="property-details">
+                            <div class="property-meta">
 
                                 <span>
                                     4 Beds
@@ -273,23 +272,17 @@
                                 </span>
 
                                 <span>
-                                    Parking
+                                    2 Parking
                                 </span>
 
                             </div>
 
-
-                            <div class="property-footer">
-
-                                <strong>
-                                    Contact for Price
-                                </strong>
-
-                                <a href="property.html">
-    View →
-</a>
-
-                            </div>
+                            <a
+                                href="property.html"
+                                class="secondary-button"
+                            >
+                                View Property
+                            </a>
 
                         </div>
 
@@ -300,89 +293,35 @@
 
                     <article class="property-card">
 
-                        <div class="property-image property-image-two">
+                        <div class="property-image">
 
-                            <span class="property-status">
-                                LAND
-                            </span>
+                            <img
+                                src="images/property-2.jpg"
+                                alt="Luxury apartment"
+                            >
 
-                            <div class="demo-label">
-                                Demo Property
-                            </div>
-
-                        </div>
-
-
-                        <div class="property-info">
-
-                            <p class="property-location">
-                                Port Harcourt, Rivers State
-                            </p>
-
-                            <h3>
-                                Residential Land
-                            </h3>
-
-
-                            <div class="property-details">
-
-                                <span>
-                                    Residential
-                                </span>
-
-                                <span>
-                                    Good Location
-                                </span>
-
-                            </div>
-
-
-                            <div class="property-footer">
-
-                                <strong>
-                                    Contact for Price
-                                </strong>
-
-                                <a href="#contact">
-                                    View →
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROPERTY 3 -->
-
-                    <article class="property-card">
-
-                        <div class="property-image property-image-three">
-
-                            <span class="property-status">
+                            <span class="property-tag">
                                 FOR RENT
                             </span>
 
-                            <div class="demo-label">
-                                Demo Property
-                            </div>
-
                         </div>
 
-
-                        <div class="property-info">
+                        <div class="property-content">
 
                             <p class="property-location">
                                 Port Harcourt, Rivers State
                             </p>
 
                             <h3>
-                                Executive Apartment
+                                Luxury City Apartment
                             </h3>
 
+                            <p class="property-description">
+                                A stylish apartment offering modern
+                                finishes and convenient city living.
+                            </p>
 
-                            <div class="property-details">
+                            <div class="property-meta">
 
                                 <span>
                                     3 Beds
@@ -393,23 +332,77 @@
                                 </span>
 
                                 <span>
-                                    Parking
+                                    1 Parking
                                 </span>
 
                             </div>
 
+                            <a
+                                href="property.html"
+                                class="secondary-button"
+                            >
+                                View Property
+                            </a>
 
-                            <div class="property-footer">
+                        </div>
 
-                                <strong>
-                                    Contact for Price
-                                </strong>
+                    </article>
 
-                                <a href="#contact">
-                                    View →
-                                </a>
+
+                    <!-- PROPERTY 3 -->
+
+                    <article class="property-card">
+
+                        <div class="property-image">
+
+                            <img
+                                src="images/property-3.jpg"
+                                alt="Premium property development"
+                            >
+
+                            <span class="property-tag">
+                                INVESTMENT
+                            </span>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <p class="property-location">
+                                Port Harcourt, Rivers State
+                            </p>
+
+                            <h3>
+                                Premium Property Opportunity
+                            </h3>
+
+                            <p class="property-description">
+                                An attractive property opportunity
+                                suitable for buyers and investors.
+                            </p>
+
+                            <div class="property-meta">
+
+                                <span>
+                                    Premium
+                                </span>
+
+                                <span>
+                                    Secure
+                                </span>
+
+                                <span>
+                                    Strategic
+                                </span>
 
                             </div>
+
+                            <a
+                                href="property.html"
+                                class="secondary-button"
+                            >
+                                View Property
+                            </a>
 
                         </div>
 
@@ -426,30 +419,32 @@
              SERVICES
         ========================== -->
 
-        <section class="services-section" id="services">
+        <section
+            class="services-section"
+            id="services"
+        >
 
             <div class="container">
 
-                <div class="section-heading centered">
+                <div class="section-heading">
 
-                    <p class="section-tag">
+                    <p class="eyebrow">
                         WHAT WE DO
                     </p>
 
                     <h2>
-                        Real Estate Made Simple
+                        Real Estate Services
                     </h2>
 
                     <p>
-                        From finding the right property to making
-                        your next investment, we're here to help.
+                        Professional support for your property
+                        journey, from discovery to ownership.
                     </p>
 
                 </div>
 
 
                 <div class="services-grid">
-
 
                     <div class="service-card">
 
@@ -458,12 +453,12 @@
                         </div>
 
                         <h3>
-                            Buy a Property
+                            Property Sales
                         </h3>
 
                         <p>
-                            Find homes and properties that match
-                            your needs and investment goals.
+                            Find suitable residential and commercial
+                            properties tailored to your needs.
                         </p>
 
                     </div>
@@ -476,12 +471,12 @@
                         </div>
 
                         <h3>
-                            Sell Your Property
+                            Property Management
                         </h3>
 
                         <p>
-                            Connect your property with serious
-                            buyers looking for opportunities.
+                            Professional property support designed
+                            to help owners manage their investments.
                         </p>
 
                     </div>
@@ -494,12 +489,30 @@
                         </div>
 
                         <h3>
-                            Property Investment
+                            Land & Investment
                         </h3>
 
                         <p>
-                            Explore real estate opportunities
-                            designed to support long-term growth.
+                            Explore land and property opportunities
+                            with long-term investment potential.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            04
+                        </div>
+
+                        <h3>
+                            Real Estate Consultancy
+                        </h3>
+
+                        <p>
+                            Get guidance when making important
+                            property and investment decisions.
                         </p>
 
                     </div>
@@ -515,44 +528,51 @@
              ABOUT
         ========================== -->
 
-        <section class="about-section" id="about">
+        <section
+            class="about-section"
+            id="about"
+        >
 
-            <div class="container about-container">
+            <div class="container about-grid">
 
                 <div class="about-image">
 
-                    <div class="about-image-placeholder">
-                        EMARV HOMES
-                    </div>
+                    <img
+                        src="images/about.jpg"
+                        alt="Real estate property"
+                    >
 
                 </div>
 
 
                 <div class="about-content">
 
-                    <p class="section-tag">
-                        ABOUT EMARV
+                    <p class="eyebrow">
+                        ABOUT SLINKY HOMES
                     </p>
 
                     <h2>
                         Helping You Make
-                        Better Property Decisions.
+                        Better Property Decisions
                     </h2>
 
                     <p>
-                        Emarv Homes & Properties is a real estate
-                        business serving clients in Port Harcourt
-                        and surrounding areas.
+                        Finding the right property is more than
+                        choosing a building. It is about finding
+                        the right location, opportunity and value.
                     </p>
 
                     <p>
-                        Whether you're looking to buy, sell, rent,
-                        or explore property investment opportunities,
-                        our goal is to make the process easier.
+                        Our goal is to make the property journey
+                        clearer, easier and more confident for
+                        buyers, investors and property owners.
                     </p>
 
-                    <a href="#contact" class="primary-button">
-                        Talk to Us
+                    <a
+                        href="#contact"
+                        class="primary-button"
+                    >
+                        Speak With Us
                     </a>
 
                 </div>
@@ -563,208 +583,198 @@
 
 
         <!-- =========================
-             CALL TO ACTION
+             CONTACT
         ========================== -->
 
-        <section class="contact-section" id="contact">
+        <section
+            class="contact-section"
+            id="contact"
+        >
 
-    <div class="container">
+            <div class="container">
 
-        <div class="contact-header">
+                <div class="section-heading">
 
-            <p class="section-tag">
-                GET IN TOUCH
-            </p>
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
 
-            <h2>
-                Let's Find Your<br>
-                Next Property.
-            </h2>
-
-            <p>
-                Whether you're looking to buy, rent, sell,
-                or invest, our team is ready to help.
-            </p>
-
-        </div>
-
-
-        <div class="contact-layout">
-
-
-            <!-- CONTACT INFORMATION -->
-
-            <div class="contact-information">
-
-                <div class="contact-item">
-
-                    <span class="contact-label">
-                        PHONE
-                    </span>
-
-                    <span class="placeholder-contact">
-    Business phone number
-</span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span class="contact-label">
-                        WHATSAPP
-                    </span>
-
-                   <span class="placeholder-contact">
-    WhatsApp contact
-</span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span class="contact-label">
-                        EMAIL
-                    </span>
-
-                    <span class="placeholder-contact">
-    Business email address
-</span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span class="contact-label">
-                        LOCATION
-                    </span>
+                    <h2>
+                        Let's Find Your Next Property
+                    </h2>
 
                     <p>
-                        Port Harcourt,<br>
-                        Rivers State, Nigeria
+                        Tell us what you're looking for and
+                        we'll help you explore your options.
                     </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-info">
+
+                        <h3>
+                            Contact Information
+                        </h3>
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Phone
+                            </strong>
+
+                            <span class="placeholder-contact">
+                                Business phone number
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Email
+                            </strong>
+
+                            <span class="placeholder-contact">
+                                Business email address
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Location
+                            </strong>
+
+                            <span>
+                                Port Harcourt,
+                                Rivers State, Nigeria
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        id="contact-form"
+                        class="contact-form"
+                    >
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="interest">
+                                I'm Interested In
+                            </label>
+
+                            <select
+                                id="interest"
+                                name="interest"
+                                required
+                            >
+
+                                <option value="">
+                                    Select an option
+                                </option>
+
+                                <option value="Buying">
+                                    Buying a property
+                                </option>
+
+                                <option value="Renting">
+                                    Renting a property
+                                </option>
+
+                                <option value="Land">
+                                    Land / Investment
+                                </option>
+
+                                <option value="Management">
+                                    Property management
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us what you're looking for..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                        >
+                            Send Enquiry
+                        </button>
+
+
+                        <p
+                            id="form-message"
+                            class="form-message"
+                        ></p>
+
+                    </form>
 
                 </div>
 
             </div>
 
-
-            <!-- ENQUIRY FORM -->
-
-            <form class="contact-form" id="contact-form">
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Your Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="interest">
-                        I'm Interested In
-                    </label>
-
-                    <select
-                        id="interest"
-                        name="interest"
-                    >
-
-                        <option value="">
-                            Select an option
-                        </option>
-
-                        <option>
-                            Buying a Property
-                        </option>
-
-                        <option>
-                            Renting a Property
-                        </option>
-
-                        <option>
-                            Selling a Property
-                        </option>
-
-                        <option>
-                            Property Investment
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        placeholder="Tell us what you're looking for..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="primary-button"
-                >
-                    Send Enquiry
-                </button>
-
-                <p
-                    class="form-note"
-                    id="form-message"
-                ></p>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
     </main>
 
@@ -775,41 +785,33 @@
 
     <footer class="footer">
 
-        <div class="container footer-container">
+        <div class="container footer-content">
 
             <div>
 
                 <h3>
-                    EMARV
+                    SLINKY
                 </h3>
 
                 <p>
-                    Homes & Properties
+                    HOMES & PROPERTIES
                 </p>
 
             </div>
 
 
-            <div>
-
-                <p>
-                    Port Harcourt, Rivers State, Nigeria
-                </p>
-
-                <p>
-                    © 2026 Emarv Homes & Properties
-                </p>
-
-            </div>
+            <p>
+                © 2026 Slinky Homes & Properties.
+                All rights reserved.
+            </p>
 
         </div>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
-
     <script src="script.js"></script>
 
 </body>
+
 </html>

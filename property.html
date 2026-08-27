@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -9,37 +10,272 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Modern Family Residence | Emarv Homes</title>
+    <title>Modern Family Residence | Slinky Homes</title>
+
+    <meta
+        name="description"
+        content="Explore this modern family residence from Slinky Homes & Properties."
+    >
 
     <link rel="stylesheet" href="style.css">
 
+    <style>
+
+        /* =========================
+           PROPERTY PAGE
+        ========================== */
+
+        .property-page {
+    padding: 155px 0 90px;
+}
+
+
+        .property-back {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+
+        .property-back:hover {
+            color: var(--accent);
+        }
+
+
+        .property-detail {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+
+        .property-gallery {
+            overflow: hidden;
+            border-radius: 22px;
+            background: var(--beige);
+        }
+
+
+        .property-gallery-main {
+            height: 550px;
+            overflow: hidden;
+        }
+
+
+        .property-gallery-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .property-gallery-caption {
+            padding: 15px 20px;
+            background: var(--white);
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+
+        .property-info {
+            padding: 15px 0;
+        }
+
+
+        .property-info .property-tag {
+            position: static;
+            display: inline-block;
+            margin-bottom: 15px;
+            background: #ead7cb;
+            color: var(--accent);
+        }
+
+
+        .property-info h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.05;
+            font-weight: 500;
+            margin-bottom: 14px;
+        }
+
+
+        .property-detail-location {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+
+        .property-price {
+            margin-bottom: 28px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 30px;
+        }
+
+
+        .property-summary {
+            padding: 22px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+
+        .property-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+
+        .property-summary-item strong {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 2px;
+        }
+
+
+        .property-summary-item span {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+
+        .property-description-full {
+            margin-top: 28px;
+        }
+
+
+        .property-description-full h2 {
+            margin-bottom: 12px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 27px;
+            font-weight: 500;
+        }
+
+
+        .property-description-full p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+
+        .property-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 23px;
+            border-radius: 50px;
+            background: #2f6f45;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .property-detail {
+                grid-template-columns: 1fr;
+            }
+
+
+            .property-gallery-main {
+                height: 480px;
+            }
+
+
+            .property-info {
+                padding: 0;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .property-page {
+                padding: 105px 0 65px;
+            }
+
+
+            .property-gallery-main {
+                height: 330px;
+            }
+
+
+            .property-summary-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+
+            .property-actions {
+                flex-direction: column;
+            }
+
+
+            .property-actions a {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
 </head>
 
-<body class="property-page">
+
+<body>
 
 
     <!-- =========================
          NAVIGATION
     ========================== -->
 
-    <header class="navbar property-navbar">
+    <header class="navbar">
 
         <div class="container nav-container">
 
             <a href="index.html" class="logo">
-
-                <span class="logo-main">
-                    EMARV
-                </span>
-
-                <span class="logo-sub">
-                    HOMES & PROPERTIES
-                </span>
-
+                SLINKY
+                <span>HOMES & PROPERTIES</span>
             </a>
 
 
             <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
 
                 <a href="index.html#properties">
                     Properties
@@ -50,7 +286,7 @@
                 </a>
 
                 <a href="index.html#about">
-                    About Us
+                    About
                 </a>
 
                 <a href="index.html#contact">
@@ -58,197 +294,192 @@
                 </a>
 
             </nav>
-            <button class="mobile-menu-button" aria-label="Open navigation menu">
-    ☰
-</button>
 
 
-            <a
-                href="#property-contact"
-                class="nav-button"
+            <button
+                class="mobile-menu-button"
+                aria-label="Open navigation menu"
             >
-                Let's Talk
-            </a>
+                ☰
+            </button>
 
         </div>
 
     </header>
 
 
-    <!-- =========================
-         PROPERTY HERO
-    ========================== -->
-
-    <section class="property-hero">
-
-        <div class="container">
-
-            <a
-                href="index.html#properties"
-                class="back-link"
-            >
-                ← Back to Properties
-            </a>
-
-
-            <div class="property-hero-image">
-
-                <div class="property-demo-label">
-                    DEMO PROPERTY
-                </div>
-
-                <div class="property-status-large">
-                    FOR SALE
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
 
     <!-- =========================
-         PROPERTY INFORMATION
+         PROPERTY
     ========================== -->
 
-    <section class="property-details-section">
+    <main>
 
-        <div class="container property-details-layout">
+        <section class="property-page">
 
-
-            <!-- MAIN INFORMATION -->
-
-            <div class="property-main-info">
-
-                <p class="section-tag">
-                    RESIDENTIAL PROPERTY
-                </p>
-
-                <h1>
-                    Modern Family Residence
-                </h1>
-
-                <p class="property-address">
-                    📍 Port Harcourt, Rivers State, Nigeria
-                </p>
-
-
-                <div class="property-specs">
-
-                    <div>
-                        <strong>4</strong>
-                        <span>Bedrooms</span>
-                    </div>
-
-                    <div>
-                        <strong>4</strong>
-                        <span>Bathrooms</span>
-                    </div>
-
-                    <div>
-                        <strong>1</strong>
-                        <span>Parking</span>
-                    </div>
-
-                    <div>
-                        <strong>24/7</strong>
-                        <span>Security</span>
-                    </div>
-
-                </div>
-
-
-                <h2>
-                    About This Property
-                </h2>
-
-                <p>
-                    This modern family residence offers a
-                    comfortable and thoughtfully designed living
-                    environment in a desirable location.
-                </p>
-
-                <p>
-                    With spacious living areas, multiple bedrooms
-                    and convenient amenities, this property is
-                    designed for families looking for quality,
-                    comfort and long-term value.
-                </p>
-
-
-                <h2>
-                    Property Features
-                </h2>
-
-                <div class="features-grid">
-
-                    <div>✓ Spacious Living Area</div>
-
-                    <div>✓ Modern Kitchen</div>
-
-                    <div>✓ Ensuite Bedrooms</div>
-
-                    <div>✓ Secure Environment</div>
-
-                    <div>✓ Dedicated Parking</div>
-
-                    <div>✓ Quality Finishing</div>
-
-                </div>
-
-            </div>
-
-
-            <!-- CONTACT CARD -->
-
-            <aside
-                class="property-contact-card"
-                id="property-contact"
-            >
-
-                <p class="section-tag">
-                    INTERESTED?
-                </p>
-
-                <h2>
-                    Get Property Details
-                </h2>
-
-                <p>
-                    Speak with an Emarv property consultant
-                    to learn more about this property.
-                </p>
-
-
-                <div class="contact-price">
-                    Contact for Price
-                </div>
+            <div class="container">
 
 
                 <a
-    href="#"
-    class="primary-button whatsapp-button"
-    onclick="return false;"
->
-    WhatsApp Contact
-</a>
-<p class="demo-contact-note">
-    WhatsApp contact will be connected to the business account.
-</p>
-
-                <a
-                    href="index.html#contact"
-                    class="contact-secondary"
+                    href="index.html#properties"
+                    class="property-back"
                 >
-                    Send an Enquiry →
+                    ← Back to Properties
                 </a>
 
-            </aside>
 
-        </div>
+                <div class="property-detail">
 
-    </section>
+
+                    <!-- IMAGE -->
+
+                    <div class="property-gallery">
+
+                        <div class="property-gallery-main">
+
+                            <img
+                                src="images/property-1.jpg"
+                                alt="Modern family residence"
+                            >
+
+                        </div>
+
+
+                        <div class="property-gallery-caption">
+                            Property image shown for demonstration purposes.
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- INFORMATION -->
+
+                    <div class="property-info">
+
+                        <span class="property-tag">
+                            FOR SALE
+                        </span>
+
+
+                        <h1>
+                            Modern Family Residence
+                        </h1>
+
+
+                        <p class="property-detail-location">
+                            Port Harcourt, Rivers State
+                        </p>
+
+
+                        <div class="property-price">
+                            Price on Request
+                        </div>
+
+
+                        <div class="property-summary">
+
+                            <div class="property-summary-grid">
+
+                                <div class="property-summary-item">
+
+                                    <strong>
+                                        4
+                                    </strong>
+
+                                    <span>
+                                        Bedrooms
+                                    </span>
+
+                                </div>
+
+
+                                <div class="property-summary-item">
+
+                                    <strong>
+                                        4
+                                    </strong>
+
+                                    <span>
+                                        Bathrooms
+                                    </span>
+
+                                </div>
+
+
+                                <div class="property-summary-item">
+
+                                    <strong>
+                                        2
+                                    </strong>
+
+                                    <span>
+                                        Parking
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="property-description-full">
+
+                            <h2>
+                                About This Property
+                            </h2>
+
+
+                            <p>
+                                Welcome to a beautifully designed modern
+                                residence created for comfortable family
+                                living.
+                            </p>
+
+
+                            <p>
+                                This demonstration listing showcases how
+                                Slinky Homes & Properties could present
+                                individual properties online, giving
+                                prospective buyers the information they
+                                need before making an enquiry.
+                            </p>
+
+                        </div>
+
+
+                        <div class="property-actions">
+
+                            <a
+                                href="index.html#contact"
+                                class="primary-button"
+                            >
+                                Make an Enquiry
+                            </a>
+
+
+                            <a
+                                href="https://wa.me/2340000000000?text=Hello%20Slinky%20Homes%2C%20I'm%20interested%20in%20the%20Modern%20Family%20Residence."
+                                class="whatsapp-button"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Enquire on WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
 
 
     <!-- =========================
@@ -257,32 +488,25 @@
 
     <footer class="footer">
 
-        <div class="container footer-container">
+        <div class="container footer-content">
 
             <div>
 
                 <h3>
-                    EMARV
+                    SLINKY
                 </h3>
 
                 <p>
-                    Homes & Properties
+                    HOMES & PROPERTIES
                 </p>
 
             </div>
 
 
-            <div>
-
-                <p>
-                    Port Harcourt, Rivers State, Nigeria
-                </p>
-
-                <p>
-                    © 2026 Emarv Homes & Properties
-                </p>
-
-            </div>
+            <p>
+                © 2026 Slinky Homes & Properties.
+                All rights reserved.
+            </p>
 
         </div>
 
@@ -292,4 +516,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
